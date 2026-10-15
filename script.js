@@ -7,7 +7,7 @@ console.log("SCRIPT CARGADO CORRECTAMENTE");
 function cargarDatos(clave, valorInicial) {
     try {
         const datos = localStorage.getItem(clave);
-        return datos === nul l ? valorInicial : JSON.parse(datos);
+        return datos === null ? valorInicial : JSON.parse(datos);
     } catch (error) {
         return valorInicial;
     }
